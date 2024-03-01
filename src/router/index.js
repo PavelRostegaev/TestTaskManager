@@ -4,14 +4,13 @@ import HomePage from '../views/HomePage.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomePage
+    name: 'about',
+    component: () => import(/* webpackChunkName: "about" */ '../views/TaskPage.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    
-    component: () => import(/* webpackChunkName: "about" */ '../views/TaskPage.vue')
+    path: '/home',
+    name: 'home',
+    component: HomePage
   }
 ]
 
