@@ -1,18 +1,28 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Домашняя страница</router-link> |
+    <router-link to="/about">Страница с задачами</router-link>
   </nav>
   <router-view/>
 </template>
 
 <style>
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+  background: #F9FAFF;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #252525e7;
 }
 
 nav {
@@ -25,6 +35,6 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: rgb(0, 218, 80);
 }
 </style>
