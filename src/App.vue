@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Домашняя страница</router-link> |
-    <router-link to="/about">Страница с задачами</router-link>
+    <router-link to="/home">Домашняя страница</router-link> |
+    <router-link to="/">Страница с задачами</router-link>
   </nav>
   <router-view/>
 </template>
