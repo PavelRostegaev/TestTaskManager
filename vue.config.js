@@ -1,5 +1,7 @@
 const { defineConfig } = require('@vue/cli-service')
+
 module.exports = defineConfig({
   publicPath: '/TestTaskManager/',
-  transpileDependencies: true
+  transpileDependencies: true,
+  filenameHashing: false
 })
